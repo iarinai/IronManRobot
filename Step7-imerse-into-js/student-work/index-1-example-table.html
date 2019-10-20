@@ -29,6 +29,41 @@
                 $newTd.text('I AM NEWLY BORN! The force is ... kind of weak in me to be honest');
                 $newTr.append($newTd);
             }
+            function append2R3C(){
+                var $table = $('#table-example');
+
+                var $newTr = $('<tr>');
+                $table.append($newTr);
+                
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+
+                var $table = $('#table-example');
+
+                var $newTr = $('<tr>');
+                $table.append($newTr);
+
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+
+                var $newTd = $('<td>');
+                $newTd.text('I am strong!');
+                $newTr.append($newTd);
+            }
         </script>
 
         
@@ -41,6 +76,7 @@
                 <div class="col-sm-4"><button class="btn btn-primary" onclick="clearTable()">Clear table</button></div>
                 <div class="col-sm-4"><button class="btn btn-primary" onclick="appendNewRow()">Append new row</button></div>
                 <div class="col-sm-4">Append new 2 rows and with 3 columns each</div>
+                <div class="col-sm-4"><button class="btn btn-primary" onclick="append2R3C()">Add 2 rows, 3 collumns</button></div>
             </div>
         </div>
 

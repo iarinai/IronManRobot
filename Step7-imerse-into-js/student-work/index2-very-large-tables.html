@@ -87,6 +87,21 @@
                     }
                 }
             }
+
+            function appendNewRowAndColumns(noRows, noColumns){
+                var $table = $('#table-example');
+
+                for(var indexRows = 0; indexRows < noRows; indexRows++){
+                    var $newTr = $('<tr>');
+                    $table.append($newTr);
+
+                    for(var indexColumns = 0; indexColumns < noColumns; indexColumns++){
+                        var $newTd = $('<td>');
+                        $newTd.text(':)');
+                        $newTr.append($newTd);
+                    }
+                }
+            }
         </script>
 
         
@@ -113,7 +128,7 @@
                 <div class="col-sm-12"><button class="btn btn-warning" onclick="appendNewRowAndColumns(3, 7)">Append 3 new rows and with 7 columns each</button></div>
             </div>
             <div class="row">
-                <div class="col-sm-6">Append 42 new rows and with 73 columns each</button></div>
+                <div class="col-sm-12"><button class="btn btn-warning" onclick="appendNewRowAndColumns(42, 73)">Append 42 new rows and with 73 columns each</button></div>
             </div>
         </div>
 
